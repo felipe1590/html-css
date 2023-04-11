@@ -11,9 +11,14 @@
             padding: 0;
         }
 
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
         header {
             background-color: #fff;
-            height: 60px;
+            height: 80px;
             width: 100%;
         }
 
@@ -23,54 +28,302 @@
             background-size: 100px 30px;
             width: 100px;
             height: 30px;
-            top: 15px;
+            top: 25px;
             left: 5vw;
-        }
-        
-        section {
-            
         }
 
         section.topo{
-            height: 100vh;
+            height: 700px;
             background-image: url('imagens2/topo.jpg');
-            background-size: 100%;
-            background-position: top right;
+            background-size: cover;
+            background-position: center center;
             background-repeat: no-repeat;
         }
+
+        div.texto-topo {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 480px;
+            line-height: 2em;
+            border-radius: 5%;
+            padding: 60px 20px;
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 100px;
+        }
+
+        div.texto-topo > h1 {
+            font-size: 3.5em;
+            line-height: 1.5em;
+            padding-bottom: 35px;
+        }
+
+        div.texto-topo > p {
+            padding-bottom: 35px;
+        }
+
+        p > a.link {
+            color: #fff;
+        }
+
+        a.botao-topo {
+            font-size: 1em;
+            text-decoration: none;
+            color: #fff;
+            margin: 5px;
+            padding: 20px 55px;
+            border-radius: 60px;
+            border: 2px solid white;
+        }
+
+        section.informacoes {
+            font-size: 1.1em;
+            text-align: center;
+            line-height: 1.3em;
+            color: black;
+        }
+
+        section.informacoes > h2 {
+            color: black;
+            text-align: center;
+            padding: 90px;
+            font-size: 3em;
+        }
+
+        section.informacoes a {
+            color: black;
+            font-style: italic;
+        }
+
+        section > div.info01{
+            display: inline-block;
+            width: 460px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+        }
+
+        section > div.info02{
+            border-top: 10px;
+            padding-bottom: 30px;
+            display: inline-block;
+            width: 460px;
+        }
+
+        div.info01 img{
+            width: 400px;
+            border-radius: 1000px 1000px 0 0;
+        }
+
+        div.info02 img{
+            width: 400px;
+            border-radius: 0 0 1000px 1000px;
+        }
+
+        div.texto-destaque {
+            background-color: #BFA98B;
+            padding: 30px;
+            border-radius: 20px;
+            color: #fff;
+        }
+
+        div.texto-normal {
+            padding: 30px;
+            font-size: 0.8em;
+        }
+
+        p.texto-normal {
+            font-size: 0.9em;
+        }
+
+        div.texto-destaque > p{
+            padding-bottom: 10px;
+        }
+
+        section.sobre {
+            margin-top: 80px;
+            margin-bottom: 300px;
+            background-image: url('imagens2/hands-1283917_1280.jpg');
+            background-position: center center;
+            height: 500px;
+        }
+
+        section.sobre p {
+            color: black;
+        }
+
+        section.sobre p > a {
+            color: black;
+        }
+
+        .referencia{
+            position: relative;
+            text-align: center;
+            top: 430px;
+        }
+
+        div.caracteristicas {
+            display: inline-block;
+            width: 250px;
+            height: 290px;
+            padding: 10px;
+            background-color: #fff;
+            color: black;
+            line-height: 1.8em;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+            margin-right: 20px;
+        }
+
+        div.caracteristicas > h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 2.5em;
+            color: #BFA98B;
+        }
+
+        div.caracteristicas > h3 {
+            padding-bottom: 25px;
+        }
+
+        div.destaques {
+            position: relative;
+            top: 390px;
+            left: 95px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333333;
+            padding: 50px;
+        }
+
+        footer p > a {
+            color: #fff;
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-
-        </div>
+        <div class="logo"></div>
     </header>
     <main>
         <section class="topo">
-            <h1>
-                Unique Craft <br> 
-                Coafe in NYC
-            </h1>
+            <div class="texto-topo">
+                <h1>
+                    Unique Craft <br>
+                    Cafe in NYC
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi dolore ratione illo eos ipsam nihil temporibus enim vel, harum qui rerum tempore quas aliquid officia, cum distinctio dicta soluta delectus.
+                </p>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi dolore ratione illo eos ipsam nihil temporibus enim vel, harum qui rerum tempore quas aliquid officia, cum distinctio dicta soluta delectus.
-            </p>
+                <p>
+                    Imagem por <a class="link" href="#"> Pixabay</a>
+                </p>
 
-            <a href="">Imagem do Pixabay</a>
+                <a class="botao-topo" href="#">VIEW MENU</a>
+            </div>
             
         </section>
 
         <section class="informacoes">
+            <h2>
+                Coffee & Cakes
+            </h2>
 
+            <div class="info01">
+                <img src="imagens2/cafe.jpg" alt="café puro na mesa">
+                <div class="texto-normal">
+                    <p>
+                        Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.
+                    </p>
+                </div>
+                
+                    <div class="texto-destaque">
+                        <p><strong>Our coffee is rich in flavor and the espresso is a perfect balance of sweetness and acidity that functions well in milk drinks.</strong></p>
+                        <p class="texto-normal">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    </div>
+                
+            </div>
+
+            <div class="info02">
+    
+                <div class="texto-destaque">
+                    <p><strong>In addition to our own unique line-up of seasonal Single Origin Drip Coffees, Single Origin Cold Brews</strong></p>
+                    <p class="texto-normal">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
+        
+
+                <div class="texto-normal">
+                    <p>
+                        He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing. He as spoke avoid given downs money on we. Of properly carriage shutters ye as wandered up repeated moreover.
+                    </p>
+                </div>
+
+                <img src="imagens2/servindo.jpg" alt="servindo café">
+            </div>
+
+            <p>
+                Imagem do <a href="#"> Pixabay</a>
+            </p>
         </section>
 
         <section class="sobre">
+            <div class="destaques">
+                <div class="caracteristicas">
+                    <h2>
+                        01
+                    </h2>
+                    <h3>
+                        Sobre Nós
+                    </h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="caracteristicas">
+                    <h2>
+                        02
+                    </h2>
+                    <h3>
+                        Nossa comida
+                    </h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="caracteristicas">
+                    <h2>
+                        03
+                    </h2>
+                    <h3>
+                        Nossas Bebidas
+                    </h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="caracteristicas">
+                    <h2>
+                        04
+                    </h2>
+                    <h3>
+                        Excelente café
+                    </h3>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <p class="referencia">
+                Imagem por <a class="link" href="#"> Pixabay</a>
+            </p>
 
         </section>
 
         <footer>
-            <p><a href="https://nicepage.com/website-templates" target="_blank">Website Templates</a> created with <a href="https://nicepage.com/" target="_blank">Website Builder Software</a>.</p>
+            <p><a href="https://nicepage.com/website-templates" target="_blank">Website Templates</a> creado com HTML5 e CSS3.</p>
         </footer>
 
     </main>
